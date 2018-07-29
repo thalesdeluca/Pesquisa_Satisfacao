@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Pesquisa_Satisfacao</string>
+    <string name="disapproval">ಠ_ಠ</string>
+    <string name="happy">ʕᵔᴥᵔʔ</string>
+    <string name="normal">ʘ‿ʘ</string>
+    <string name="none">-</string>
+</resources>

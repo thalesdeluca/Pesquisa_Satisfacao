@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?><!--TODO: finish Result layout-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/title_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="15dp"
+            android:text="Resultados Mensais"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_result"
+        android:background="@color/light_gray"
+        android:orientation="horizontal"
+        android:id="@+id/datebar"
+        android:elevation ="6dp"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/lower_month_btn"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/black_3d_rounded_button"
+                android:elevation="2dp"
+                android:src="@drawable/ic_left_arrow"
+
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/month_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:padding="15dp"
+                android:text="7"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/raise_month_btn"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/black_3d_rounded_button"
+                android:elevation="2dp"
+                android:rotation="180"
+                android:src="@drawable/ic_left_arrow"
+
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/lower_year_btn"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/black_3d_rounded_button"
+                android:elevation="2dp"
+                android:src="@drawable/ic_left_arrow"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/year_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:padding="15dp"
+                android:text="2018"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/raise_year_btn"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/black_3d_rounded_button"
+                android:elevation="2dp"
+                android:rotation="180"
+                android:src="@drawable/ic_left_arrow"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="20dp"
+        android:paddingTop = "20dp"
+        android:layout_below="@id/datebar"
+        android:background="@color/colorPrimary"
+        android:id="@+id/root_results">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/white_rounded_content"
+            android:backgroundTint="@color/white"
+            android:paddingTop="25dp"
+            android:paddingHorizontal="20dp"
+            android:orientation="vertical"
+            android:id="@+id/result_content">
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@drawable/progressbar_green"
+                android:max="200"
+                android:progress="160"
+                android:secondaryProgress="1"
+                android:layout_margin="20dp"
+                android:id="@+id/progressbar_pb"
+                android:clickable="false"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="Pontuação"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="00"
+                android:textColor="@color/green"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:id="@+id/result_txt"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="Clientes participantes"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray"
+                android:layout_marginHorizontal="20dp"/>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/participants_lv" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circular_blue_button"
+            android:text="Gerar Resultado"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:id="@+id/generate_result_btn"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

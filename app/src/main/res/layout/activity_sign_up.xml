@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/fields"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/transparent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginBottom="30dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher_foreground"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="40dp"
+                android:text="Pesquisa de Satisfação"
+                android:typeface="serif"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:typeface="serif"
+                android:text="00/0000"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:id="@+id/research_date_tv"
+                android:textSize="30sp"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="30dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp"
+                android:text="É somente possível participar de uma pesquisa a cada 2 meses"
+                android:textAlignment="center"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/error_tv"
+                android:paddingLeft="10dp"
+                android:text="Todos Campos Obrigatórios"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@drawable/rounded_error" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:text="Nome"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"
+                android:elevation="3dp"
+                android:id="@+id/name_et"
+                android:hint="Razão Social ou nome fantasia"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:inputType="text"
+                android:nextFocusDown="@id/name_et"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:text="Nome de contato"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"
+                android:elevation="3dp"
+                android:id="@+id/nick_et"
+                android:hint="Nome"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:maxLines="1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:text="Data em que se tornou cliente"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"
+                android:elevation="3dp"
+                android:hint="0/0/0000"
+                android:padding="10dp"
+                android:inputType="date"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:id="@+id/date_pick_et"
+                android:focusable="false"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:visibility="gone"
+            android:layout_margin="20dp"
+            android:id="@+id/next_btn"
+            android:layout_alignParentBottom="true"
+            android:foreground="@drawable/ripple_effect">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prosseguir"
+                android:padding="10dp"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:typeface="monospace"
+                android:fontFamily="sans-serif-condensed"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/count"
+            android:text=""/>
+
+    </RelativeLayout>
+
+</ScrollView>

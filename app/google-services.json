@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "741469261561",
+    "firebase_url": "https://pesquisa-de-satisfacao-5b24c.firebaseio.com",
+    "project_id": "pesquisa-de-satisfacao-5b24c",
+    "storage_bucket": "pesquisa-de-satisfacao-5b24c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741469261561:android:db0543d63042dd33",
+        "android_client_info": {
+          "package_name": "com.delucathales.pesquisa_satisfacao"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "741469261561-je05f1i321smu7627d7a0t8l1hmoblp7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.delucathales.pesquisa_satisfacao",
+            "certificate_hash": "7ea73bdb844650ef82b1b6505a865b78bed2c20a"
+          }
+        },
+        {
+          "client_id": "741469261561-s2tph1r2lhbtjo56821uaq7m8538sqo5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoc-kAIJXEkhH9cG0uP1VUPXYvkvCu4TU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "741469261561-s2tph1r2lhbtjo56821uaq7m8538sqo5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
