@@ -20,7 +20,7 @@ A visualização de resultados só é possível se todos os clientes anteriormen
 - Barra de meta
 - Lista de participantes
 
-#Últimas considerações
+# Últimas considerações
 Como sempre, existem melhorias que podem ser aplicadas como por exemplo:
 - Uma melhor usabilidade da característica Assíncrona do Firebase permitindo o cadastro em modo offline
 - Ao selecionar um cliente, alterar o status da flag afim de que ele não apareça novamente na lista de "Clientes Selecionados"
