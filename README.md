@@ -5,6 +5,7 @@ O cadastro contém as informações esenciais do cliente, sendo elas
 - Nome (Razão Social ou nome fantasia)
 - Nome de contato
 - Data em que se tornou cliente
+
 A fim de auxiliar a implementação, foram adicionados dois atributos sendo eles:
 - Data da última avaliação em que participou
 - Flag (Promotor, Neutro ou Detrator)
