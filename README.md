@@ -1,3 +1,5 @@
+![](app/src/main/banner.png)
+
 # Desafio 4 Devs
 Aplicação Android desenvolvida como solução para o problema apresentado [aqui](https://github.com/ForLogic/desafio-4-devs). Neste app, é possível cadastrar clientes, realizar avaliações individuais sobre o serviço com o mesmo e visualizar o resultado mensal da pesquisa de satisfação.
 ## Cadastro de Clientes
